@@ -18,6 +18,8 @@ public class UIController : Singleton<UIController>
     public void InGameCanvasOn()
     {
         startCanvas.gameObject.SetActive(false);
+        inGameCanvas.gameObject.SetActive(true);
+
     }
 
     public void EndCanvasOn()

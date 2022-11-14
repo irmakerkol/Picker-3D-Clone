@@ -13,6 +13,14 @@ public class GameManager : Singleton<GameManager>
         StartGame();
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0) == true && currentState == GameState.Start)
+        {
+            InGame();
+        }
+    }
+
     public void StartGame()
     {
         currentState = GameState.Start;
